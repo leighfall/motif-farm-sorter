@@ -33,11 +33,10 @@ export function getDungeonRows(motifRows: MotifRow[]): DungeonRow[] {
     const medianPieceValue =
       pricedPieces.length === 0 ? null : median(pricedPieces.map((piece) => piece.avgPrice!))
 
-    const totalSetValue =
-      pricedPieces.length === 0 ? null : pricedPieces.reduce((sum, piece) => sum + piece.avgPrice!, 0)
-
-    const pricedMinValues = pieces.map((piece) => piece.minPrice).filter((price) => price !== null)
-    const pricedMaxValues = pieces.map((piece) => piece.maxPrice).filter((price) => price !== null)
+    // Median * piece count, rather than summing each piece's (possibly
+    // troll-inflated) avgPrice directly — keeps the same outlier resistance
+    // as medianPieceValue instead of reintroducing the contamination.
+    const totalSetValue = medianPieceValue === null ? null : medianPieceValue * pieces.length
 
     const [{ chapterId, styleName, location }] = pieces
 
@@ -45,11 +44,8 @@ export function getDungeonRows(motifRows: MotifRow[]): DungeonRow[] {
       chapterId,
       styleName,
       location,
-      pieceCount: pieces.length,
       medianPieceValue,
       totalSetValue,
-      minPrice: pricedMinValues.length === 0 ? null : Math.min(...pricedMinValues),
-      maxPrice: pricedMaxValues.length === 0 ? null : Math.max(...pricedMaxValues),
       totalListingCount: pieces.reduce((sum, piece) => sum + piece.listingCount, 0),
     }
   })

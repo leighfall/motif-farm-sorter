@@ -36,13 +36,6 @@ export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
             <SortableHeader column="totalSetValue" sort={sort} onSort={onSort}>
               Total Set Value
             </SortableHeader>
-            <SortableHeader column="minPrice" sort={sort} onSort={onSort}>
-              Min
-            </SortableHeader>
-            <SortableHeader column="maxPrice" sort={sort} onSort={onSort}>
-              Max
-            </SortableHeader>
-            <th>Pieces</th>
             <th>Listings</th>
           </tr>
         </thead>
@@ -53,9 +46,6 @@ export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
               <td>{row.location}</td>
               <td>{formatGold(row.medianPieceValue)}</td>
               <td>{formatGold(row.totalSetValue)}</td>
-              <td>{formatGold(row.minPrice)}</td>
-              <td>{formatGold(row.maxPrice)}</td>
-              <td>{row.pieceCount}</td>
               <td>{row.totalListingCount}</td>
             </tr>
           ))}

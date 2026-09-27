@@ -30,7 +30,7 @@ export type MotifSourceType =
 export type MotifConfidence = 'high' | 'medium' | 'low'
 
 export type MotifSortableColumn = 'styleName' | 'avgPrice' | 'minPrice' | 'maxPrice'
-export type DungeonSortableColumn = 'styleName' | 'medianPieceValue' | 'totalSetValue' | 'minPrice' | 'maxPrice'
+export type DungeonSortableColumn = 'styleName' | 'medianPieceValue' | 'totalSetValue'
 export type SortDirection = 'asc' | 'desc'
 
 export interface SortState<TColumn extends string> {
@@ -68,10 +68,7 @@ export interface DungeonRow {
   chapterId: number
   styleName: string
   location: string
-  pieceCount: number
   medianPieceValue: number | null
   totalSetValue: number | null
-  minPrice: number | null
-  maxPrice: number | null
   totalListingCount: number
 }
