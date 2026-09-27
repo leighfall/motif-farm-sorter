@@ -130,9 +130,9 @@
   {
     "styleName": "xivkyn",
     "chapterId": 17,
-    "sourceType": "dungeon",
-    "location": "Trophy Vaults in Imperial City (opened with Key Fragments dropped in Sewers/Districts)",
-    "notes": "Imperial City DLC content (PvE/PvP hybrid zone). Guild Store purchase possible for players without Imperial City access.",
+    "sourceType": "other",
+    "location": "Trophy Vaults in the Imperial City open-world zone (bought from Tur using Imperial Fragments dropped by enemies in the Sewers/Districts)",
+    "notes": "Not an instanced dungeon — Imperial City is an open PvE/PvP hybrid zone; the Trophy Vaults are vendor-style rewards purchased with Imperial Fragments, not a dungeon boss drop. Guild Store purchase possible for players without Imperial City access.",
     "confidence": "high"
   },
   {
@@ -162,7 +162,7 @@
   {
     "styleName": "ancient orc",
     "chapterId": 21,
-    "sourceType": "dungeon",
+    "sourceType": "public_dungeon",
     "location": "Rare drop from enemies/containers in the public dungeons Old Orsinium and Rkindaleft (Wrothgar)",
     "notes": "Chapters split evenly between the two public dungeons; must farm both. Also a Legendary Crown Crate reward and directly purchasable in Crown Store.",
     "confidence": "high"
@@ -186,7 +186,7 @@
   {
     "styleName": "outlaw",
     "chapterId": 24,
-    "sourceType": "dungeon",
+    "sourceType": "overland_boss",
     "location": "World/delve bosses in Hew's Bane (e.g. Krona Keeba in Shark's Teeth Grotto, Magnifico Bahraha in Bahraha's Gloom, Syvarra of the Deep in Ko Estaran, Captain Virindi Slave-Taker in Thrall Cove)",
     "notes": "Specific chapter pieces drop from specific bosses (helms/legs/shields/shoulders/staves from Krona Keeba; boots/bows/chests/maces/swords from Magnifico Bahraha; axes/belts from Syvarra; daggers/gloves from Virindi). Rarely also from Reacquisition Board coffers in Daggerfall Thieves Den. Requires Rogue's Soot to craft.",
     "confidence": "high"
@@ -266,7 +266,7 @@
   {
     "styleName": "assassins league",
     "chapterId": 34,
-    "sourceType": "dungeon",
+    "sourceType": "overland_boss",
     "location": "World/delve bosses in Gold Coast (Ironfang in Garlas Agea, Exulus in Hrota Cave, Limenauruus in Tribune's Folly, Knight Commander Panthius in Kvatch Arena)",
     "notes": "Different armor slot chapters drop from different named bosses. Also purchasable in Guild Stores without Dark Brotherhood DLC.",
     "confidence": "high"
@@ -514,9 +514,9 @@
   {
     "styleName": "honor guard",
     "chapterId": 68,
-    "sourceType": "dungeon",
-    "location": "Blackrose Prison (Arena, Murkmire)",
-    "notes": "Chapters drop from the final boss of the 4-player Blackrose Prison arena; higher chance on Veteran. Also periodically offered in Crown Store/Crown Crates.",
+    "sourceType": "arena",
+    "location": "Blackrose Prison (4-player arena, Murkmire)",
+    "notes": "Blackrose Prison is a 4-player instanced arena (wave-based, five rounds x five arenas), not a Group Finder dungeon. Chapters drop from the final boss; higher chance on Veteran. Also periodically offered in Crown Store/Crown Crates.",
     "confidence": "high"
   },
   {
@@ -946,9 +946,9 @@
   {
     "styleName": "kindred's concord",
     "chapterId": 123,
-    "sourceType": "other",
-    "location": "Necrom / Apocrypha",
-    "notes": "Chance to drop from the public dungeon boss Bastion Nymic and its daily coffer (from Ordinator Tandasea in Necrom), from Psijic Portals on the Telvanni Peninsula, and from Antiquities excavation in Apocrypha. Drop is capped at one per account per day.",
+    "sourceType": "public_dungeon",
+    "location": "Bastion Nymic (public dungeon, Apocrypha)",
+    "notes": "Bastion Nymic is a non-instanced public dungeon (no group-finder queue). Chance to drop from its final boss and its daily coffer (from Ordinator Tandasea in Necrom); also from Psijic Portals on the Telvanni Peninsula and from Antiquities excavation in Apocrypha. Drop is capped at one per account per day.",
     "confidence": "medium"
   },
   {
