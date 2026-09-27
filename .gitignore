@@ -8,3 +8,6 @@ dist-ssr
 data/*.lua
 
 .vercel
+
+# Log output from scripts/sync-and-deploy.ps1
+logs/
