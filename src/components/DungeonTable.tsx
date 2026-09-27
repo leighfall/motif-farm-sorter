@@ -30,8 +30,8 @@ export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
               Style
             </SortableHeader>
             <th>Dungeon</th>
-            <SortableHeader column="avgPieceValue" sort={sort} onSort={onSort}>
-              Avg Piece Value
+            <SortableHeader column="medianPieceValue" sort={sort} onSort={onSort}>
+              Median Price
             </SortableHeader>
             <SortableHeader column="totalSetValue" sort={sort} onSort={onSort}>
               Total Set Value
@@ -51,7 +51,7 @@ export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
             <tr key={row.chapterId}>
               <td>{toTitleCase(row.styleName)}</td>
               <td>{row.location}</td>
-              <td>{formatGold(row.avgPieceValue)}</td>
+              <td>{formatGold(row.medianPieceValue)}</td>
               <td>{formatGold(row.totalSetValue)}</td>
               <td>{formatGold(row.minPrice)}</td>
               <td>{formatGold(row.maxPrice)}</td>

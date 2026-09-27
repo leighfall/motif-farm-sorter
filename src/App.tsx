@@ -27,7 +27,7 @@ function App() {
   const [activeFilter, setActiveFilter] = useState<MotifSourceType | 'all'>('all');
   const [motifSort, setMotifSort] = useState<SortState<MotifSortableColumn>>({ column: 'styleName', direction: 'asc' });
   const [dungeonSort, setDungeonSort] = useState<SortState<DungeonSortableColumn>>({
-    column: 'avgPieceValue',
+    column: 'medianPieceValue',
     direction: 'desc',
   });
   const [hideStylePiece, setHideStylePiece] = useState(true);
