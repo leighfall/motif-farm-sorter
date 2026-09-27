@@ -39,7 +39,6 @@ The price data goes stale the moment someone in your guild undercuts the whole m
 4. This repo is connected to Vercel's GitHub integration, so the push to `main` automatically builds and ships the site.
 
 All you have to do is keep the TTC client running so it keeps its addon files up to date — everything after that happens unattended.
-```
 
 ## Data quality notes
 
