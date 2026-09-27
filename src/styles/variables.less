@@ -1,0 +1,38 @@
+// Design tokens for the app. These feed into the `--custom-properties` set
+// on :root in index.less, which is what actually powers the light/dark theme
+// switch at runtime (via `prefers-color-scheme`) — LESS variables are
+// compile-time only, so they can't do that swap themselves.
+
+// Light theme
+@color-text-light: #6b6375;
+@color-text-h-light: #08060d;
+@color-bg-light: #fff;
+@color-border-light: #e5e4e7;
+@color-code-bg-light: #f4f3ec;
+@color-accent-light: #aa3bff;
+@color-accent-bg-light: rgba(170, 59, 255, 0.1);
+@color-accent-border-light: rgba(170, 59, 255, 0.5);
+@color-social-bg-light: rgba(244, 243, 236, 0.5);
+@shadow-light:
+  rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+// Dark theme
+@color-text-dark: #9ca3af;
+@color-text-h-dark: #f3f4f6;
+@color-bg-dark: #16171d;
+@color-border-dark: #2e303a;
+@color-code-bg-dark: #1f2028;
+@color-accent-dark: #c084fc;
+@color-accent-bg-dark: rgba(192, 132, 252, 0.15);
+@color-accent-border-dark: rgba(192, 132, 252, 0.5);
+@color-social-bg-dark: rgba(47, 48, 58, 0.5);
+@shadow-dark:
+  rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+
+// Typography
+@font-sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+@font-heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+@font-mono: ui-monospace, Consolas, monospace;
+
+// Breakpoints
+@breakpoint-mobile: 1024px;
