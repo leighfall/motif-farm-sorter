@@ -30,7 +30,7 @@ function App() {
     column: 'avgPieceValue',
     direction: 'desc',
   });
-  const [hideStylePiece, setHideStylePiece] = useState(false);
+  const [hideStylePiece, setHideStylePiece] = useState(true);
 
   function dropdownClick(evt: MotifSourceType | 'all') {
     setActiveFilter(evt);
@@ -135,7 +135,7 @@ function App() {
               onChange={(event) => setHideStylePiece(event.target.checked)}
               disabled={view === 'dungeons'}
             />
-            Hide "Style" piece
+            Hide "Style" Books
           </label>
           <DropdownFilter
             options={sourceTypeFilter}
