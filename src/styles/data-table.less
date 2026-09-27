@@ -2,7 +2,16 @@
 
 .data-table-wrapper {
   width: 100%;
-  overflow-x: auto;
+
+  // overflow-x: auto here would make this wrapper the containing block for
+  // any position: sticky element inside it (per the CSS overflow spec, any
+  // non-`visible` overflow value does this) — since the wrapper never
+  // actually scrolls vertically itself, sticky headers go inert. Scoping it
+  // to mobile only keeps sticky headers working at normal widths, where
+  // these tables fit without needing horizontal scroll anyway.
+  @media (max-width: @breakpoint-mobile) {
+    overflow-x: auto;
+  }
 }
 
 .data-table {

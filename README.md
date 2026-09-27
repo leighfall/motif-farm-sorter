@@ -10,8 +10,10 @@ A little static site that answers the eternal ESO crafter's dilemma: **is this m
 
 - 📊 **Prices** come straight from your local TTC addon data (`ItemLookUpTable_EN.lua` + `PriceTableNA.lua`) — no scraping, no guessing, just whatever the market's actually paying right now.
 - 🗺️ **Farm sources** are hand-researched and *fussy about accuracy*. "Dungeon" means an actual 4-player Group Finder dungeon — not a delve boss, not a public dungeon, not a 12-player trial wearing a dungeon costume. If it says Dungeon, you can literally queue for it.
+- 🏆 **By Dungeon view** aggregates every dungeon's drops into one row, ranked by *median* piece value (not average — one troll listing for 9,999,999 gold shouldn't convince you a dungeon is a goldmine).
 - 🔍 **Sort & filter** by style, price, or source type, so you can answer questions like "what's the most expensive thing I can farm this weekend" in about four seconds.
 - 🌗 Respects your system's light/dark mode, because nobody wants to get flashbanged checking motif prices at 2am.
+- 🕐 Shows exactly when the price data was last refreshed, converted to *your* local time, whoever and wherever you are.
 
 ## Tech stack
 
@@ -33,10 +35,10 @@ The price data goes stale the moment someone in your guild undercuts the whole m
 
 1. Open the TTC client and let it do its thing (updates the addon files in your ESO `live/AddOns/TamrielTradeCentre/` folder).
 2. Copy `ItemLookUpTable_EN.lua` and `PriceTableNA.lua` into this project's `data/` folder.
-3. Run `npm run build:data`.
-4. Commit, push, redeploy. 💰
+3. Run `npm run build:data` (this also stamps `data/last-updated.json` with the current time — that's what powers the "Last updated" text on the site).
+4. Commit and push. 💰
 
-(A fully automated "TTC client runs → everything else happens by itself" pipeline is on the wishlist — currently this is a very manual, very hands-on labor of love.)
+That's it — no manual deploy step anymore. This repo is connected to Vercel's GitHub integration, so a push to `main` automatically builds and ships the site. (A Task Scheduler job that runs the whole "TTC client updated its files → copy → build → commit → push" chain unattended is still on the wishlist — for now, steps 1–4 are a manual, hands-on labor of love.)
 
 ## Data quality notes
 
