@@ -1,0 +1,35 @@
+@import '../styles/variables.less';
+
+.dropdown-filter {
+  appearance: none;
+  padding: 8px 36px 8px 12px;
+  font-size: 14px;
+  color: var(--text-h);
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpolyline points='4,7 9,12 14,7' fill='none' stroke='%23888888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  option {
+    color: var(--text-h);
+    background-color: var(--bg);
+
+    &:hover,
+    &:checked {
+      background-color: var(--accent-bg);
+      color: var(--accent);
+    }
+  }
+}

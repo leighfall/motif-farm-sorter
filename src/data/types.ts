@@ -29,6 +29,14 @@ export type MotifSourceType =
 
 export type MotifConfidence = 'high' | 'medium' | 'low'
 
+export type SortableColumn = 'styleName' | 'avgPrice' | 'minPrice' | 'maxPrice'
+export type SortDirection = 'asc' | 'desc'
+
+export interface SortState {
+  column: SortableColumn
+  direction: SortDirection
+}
+
 export interface MotifSource {
   styleName: string
   chapterId: number
@@ -45,4 +53,10 @@ export interface MotifRow extends MotifPiece {
   location: string
   notes: string
   confidence: MotifConfidence
+}
+
+export interface sourceTypeFilterType {
+  id: number;
+  type: MotifSourceType;
+  displayName: string;
 }

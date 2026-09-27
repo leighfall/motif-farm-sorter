@@ -339,7 +339,7 @@
     "styleName": "silken ring",
     "chapterId": 44,
     "sourceType": "dungeon",
-    "location": "Velidreth, final boss of Cradle of Shadows group dungeon (Shadows of the Hist DLC)",
+    "location": "Cradle of Shadows",
     "notes": "Chance on Normal/Veteran, higher chance on Veteran Hard Mode. Also a Legendary Crown Crate reward, purchasable in Crown Store.",
     "confidence": "high"
   },
@@ -347,7 +347,7 @@
     "styleName": "mazzatun",
     "chapterId": 45,
     "sourceType": "dungeon",
-    "location": "Tree-Minder Na-Kesh, final boss of Ruins of Mazzatun group dungeon (Shadows of the Hist DLC)",
+    "location": "Ruins of Mazzatun",
     "notes": "Possible drop on Normal/Veteran, guaranteed drop on Veteran Hard Mode. Also a Legendary Crown Crate reward.",
     "confidence": "high"
   },
@@ -403,7 +403,7 @@
     "styleName": "bloodforge",
     "chapterId": 54,
     "sourceType": "dungeon",
-    "location": "Earthgore Amalgam, final boss of Bloodroot Forge group dungeon (Horns of the Reach DLC)",
+    "location": "Bloodroot Forge",
     "notes": "Chance on Normal/Veteran, better odds on Veteran Hard Mode. Crafting requires Bloodroot Flux.",
     "confidence": "high"
   },
@@ -411,7 +411,7 @@
     "styleName": "dreadhorn",
     "chapterId": 55,
     "sourceType": "dungeon",
-    "location": "Domihaus, final boss of Falkreath Hold group dungeon (Horns of the Reach DLC)",
+    "location": "Falkreath Hold",
     "notes": "Chance on Normal/Veteran, better odds on Veteran Hard Mode. Crafting requires Minotaur Bezoar.",
     "confidence": "high"
   },
@@ -435,7 +435,7 @@
     "styleName": "fang lair",
     "chapterId": 58,
     "sourceType": "dungeon",
-    "location": "Thurvokun, final boss of Fang Lair group dungeon (Dragon Bones DLC)",
+    "location": "Fang Lair",
     "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also a Legendary Crown Crate reward (Celestial Crown Crates).",
     "confidence": "high"
   },
@@ -443,7 +443,7 @@
     "styleName": "scalecaller",
     "chapterId": 59,
     "sourceType": "dungeon",
-    "location": "Zaan the Scalecaller, final boss of Scalecaller Peak group dungeon (Dragon Bones DLC)",
+    "location": "Scalecaller Peak",
     "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also periodically sold directly in Crown Store.",
     "confidence": "high"
   },
@@ -491,7 +491,7 @@
     "styleName": "huntsman",
     "chapterId": 65,
     "sourceType": "dungeon",
-    "location": "Balorgh, final boss of March of Sacrifice group dungeon (Wolfhunter DLC)",
+    "location": "March of Sacrifice",
     "notes": "Chance on Normal/Veteran; better odds on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -499,7 +499,7 @@
     "styleName": "silver dawn",
     "chapterId": 66,
     "sourceType": "dungeon",
-    "location": "Vykosa the Ascendant, final boss of Moon Hunter Keep group dungeon (Wolfhunter DLC)",
+    "location": "Moon Hunter Keep",
     "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also a Legendary Crown Crate reward (Dark Chivalry Crown Crates); Guild Store purchasable without the DLC.",
     "confidence": "high"
   },
@@ -699,7 +699,7 @@
     "styleName": "hazardous alchemy",
     "chapterId": 91,
     "sourceType": "dungeon",
-    "location": "Stone Garden (Blackreach, Western Skyrim)",
+    "location": "Stone Garden",
     "notes": "Possible drop from final boss Arkasis the Mad Alchemist, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -771,7 +771,7 @@
     "styleName": "true-sworn",
     "chapterId": 100,
     "sourceType": "dungeon",
-    "location": "Black Drake Villa (Gold Coast)",
+    "location": "Black Drake Villa",
     "notes": "Possible drop from final boss Pyroturge Encratis, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -955,7 +955,7 @@
     "styleName": "the recollection",
     "chapterId": 124,
     "sourceType": "dungeon",
-    "location": "Oathsworn Pit (Scions of Ithelia)",
+    "location": "Oathsworn Pit",
     "notes": "Possible drop from final boss Aradros the Awakened, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -963,7 +963,7 @@
     "styleName": "blind path cultist",
     "chapterId": 125,
     "sourceType": "dungeon",
-    "location": "Bedlam Veil (Scions of Ithelia)",
+    "location": "Bedlam Veil",
     "notes": "Possible drop from final boss the Blind, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -1003,7 +1003,7 @@
     "styleName": "exile's revenge",
     "chapterId": 130,
     "sourceType": "dungeon",
-    "location": "Exiled Redoubt (Fallen Banners)",
+    "location": "Exiled Redoubt",
     "notes": "Possible drop from final boss Squall of Retribution, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -1011,7 +1011,7 @@
     "styleName": "militant monk",
     "chapterId": 131,
     "sourceType": "dungeon",
-    "location": "Lep Seclusa (Fallen Banners)",
+    "location": "Lep Seclusa",
     "notes": "Possible drop from final boss Orpheon the Tactician, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -1043,7 +1043,7 @@
     "styleName": "black soul gem",
     "chapterId": 135,
     "sourceType": "dungeon",
-    "location": "Black Gem Foundry (Feast of Shadows)",
+    "location": "Black Gem Foundry",
     "notes": "Possible drop from final boss High Soulbinder Vykand, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
@@ -1051,7 +1051,7 @@
     "styleName": "voskrona guardian",
     "chapterId": 136,
     "sourceType": "dungeon",
-    "location": "Naj-Caldeesh (Feast of Shadows)",
+    "location": "Naj-Caldeesh",
     "notes": "Possible drop from final boss Talen-Lah, guaranteed on Veteran Hard Mode.",
     "confidence": "high"
   },
