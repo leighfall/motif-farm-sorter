@@ -13,6 +13,7 @@ const DATA_DIR = path.join(__dirname, "..", "data");
 const LOOKUP_PATH = path.join(DATA_DIR, "ItemLookUpTable_EN.lua");
 const PRICE_PATH = path.join(DATA_DIR, "PriceTableNA.lua");
 const OUT_PATH = path.join(DATA_DIR, "motifs.json");
+const LAST_UPDATED_PATH = path.join(DATA_DIR, "last-updated.json");
 
 const MOTIF_NAME_RE = /"crafting motif (\d+): ([^"]+)"\]=\{((?:\[\d+\]=\d+,)+)\}/gi;
 const LEVEL_ID_RE = /\[(\d+)\]=(\d+),/g;
@@ -181,6 +182,7 @@ function main() {
   results.sort((a, b) => a.chapterId - b.chapterId || a.pieceName.localeCompare(b.pieceName));
 
   writeFileSync(OUT_PATH, JSON.stringify(results, null, 2));
+  writeFileSync(LAST_UPDATED_PATH, JSON.stringify({ generatedAt: new Date().toISOString() }, null, 2));
   console.log(`Wrote ${results.length} motif pieces to ${OUT_PATH} (${results.length - missingPrice} priced, ${missingPrice} with no current listings, still included with noListings: true).`);
 }
 

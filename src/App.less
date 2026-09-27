@@ -26,6 +26,19 @@
   .motif-table-controls {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .last-updated {
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .filter-controls {
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 16px;
   }
@@ -105,8 +118,15 @@
     padding: 16px;
 
     .motif-table-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .filter-controls {
       flex-wrap: wrap;
-      justify-content: flex-end;
+      justify-content: flex-start;
+      width: 100%;
     }
   }
 }

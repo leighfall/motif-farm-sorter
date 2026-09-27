@@ -6,10 +6,12 @@ import { getMotifRows } from './data/getMotifRows'
 import { getDungeonRows } from './data/getDungeonRows'
 import { sourceTypeFilter } from './data/constants';
 import { DropdownFilter } from './components/DropdownFilter';
+import { getLastUpdated, formatLastUpdated } from './data/getLastUpdated';
 import type { DungeonSortableColumn, MotifSortableColumn, MotifSourceType, SortState } from './data/types';
 
 const motifRows = getMotifRows();
 const dungeonRows = getDungeonRows(motifRows);
+const lastUpdatedText = formatLastUpdated(getLastUpdated());
 
 type View = 'pieces' | 'dungeons';
 
@@ -108,41 +110,44 @@ function App() {
           </a>
         </div>
         <div className="motif-table-controls">
-          <div className="view-tabs" role="tablist">
-            <button
-              type="button"
-              role="tab"
-              aria-selected={view === 'pieces'}
-              className={`view-tab ${view === 'pieces' ? 'active' : ''}`}
-              onClick={() => setView('pieces')}
-            >
-              All Motifs
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected={view === 'dungeons'}
-              className={`view-tab ${view === 'dungeons' ? 'active' : ''}`}
-              onClick={() => setView('dungeons')}
-            >
-              By Dungeon
-            </button>
-          </div>
-          <label className="hide-style-piece-toggle">
-            <input
-              type="checkbox"
-              checked={hideStylePiece}
-              onChange={(event) => setHideStylePiece(event.target.checked)}
+          <span className="last-updated">Last updated: {lastUpdatedText}</span>
+          <div className="filter-controls">
+            <div className="view-tabs" role="tablist">
+              <button
+                type="button"
+                role="tab"
+                aria-selected={view === 'pieces'}
+                className={`view-tab ${view === 'pieces' ? 'active' : ''}`}
+                onClick={() => setView('pieces')}
+              >
+                All Motifs
+              </button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected={view === 'dungeons'}
+                className={`view-tab ${view === 'dungeons' ? 'active' : ''}`}
+                onClick={() => setView('dungeons')}
+              >
+                By Dungeon
+              </button>
+            </div>
+            <label className="hide-style-piece-toggle">
+              <input
+                type="checkbox"
+                checked={hideStylePiece}
+                onChange={(event) => setHideStylePiece(event.target.checked)}
+                disabled={view === 'dungeons'}
+              />
+              Hide "Style" Books
+            </label>
+            <DropdownFilter
+              options={sourceTypeFilter}
+              activeFilter={activeFilter}
+              onChange={dropdownClick}
               disabled={view === 'dungeons'}
             />
-            Hide "Style" Books
-          </label>
-          <DropdownFilter
-            options={sourceTypeFilter}
-            activeFilter={activeFilter}
-            onChange={dropdownClick}
-            disabled={view === 'dungeons'}
-          />
+          </div>
         </div>
       </div>
       {view === 'pieces' ? (
