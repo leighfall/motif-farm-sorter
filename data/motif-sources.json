@@ -1,0 +1,1066 @@
+[
+  {
+    "styleName": "high elf",
+    "chapterId": 1,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dark elf",
+    "chapterId": 2,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "wood elf",
+    "chapterId": 3,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "nord",
+    "chapterId": 4,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "breton",
+    "chapterId": 5,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "redguard",
+    "chapterId": 6,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "khajiit",
+    "chapterId": 7,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "orc",
+    "chapterId": 8,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "argonian",
+    "chapterId": 9,
+    "sourceType": "starter",
+    "location": "Known from character creation (base game racial style)",
+    "notes": "Craftable immediately, no unlock needed.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "imperial",
+    "chapterId": 10,
+    "sourceType": "zone_drop",
+    "location": "Random rare loot drop from containers/enemies in any base-game zone",
+    "notes": "Not automatically known even by Imperial-race characters for crafting (Imperial Edition only unlocks the look for the Outfit System for free, not the crafting motif itself). Motif 10 book/chapters drop rarely as world loot; also purchasable in Guild Stores.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancient elf",
+    "chapterId": 11,
+    "sourceType": "crown_store",
+    "location": "Crown Store (periodic limited-time re-releases, e.g. Jan 15-22 2026 for ~1050 crowns)",
+    "notes": "One of the original 'rare style' motifs sold as a Crown Store pack (available 2015-2017, later returned intermittently). No known reliable in-game farm; copies can be resold on Guild Stores by players who bought it from the Crown Store.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "barbaric",
+    "chapterId": 12,
+    "sourceType": "zone_drop",
+    "location": "Containers (desks, dressers, trunks, wardrobes, backpacks) in Cadwell's Silver zones (opposing alliance veteran zones)",
+    "notes": "Also sold via Crown Store historically as a 'rare style' pack. Requires completing the other two alliances' main quests to unlock Cadwell's Silver access. Low drop rate from containers.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "primal",
+    "chapterId": 13,
+    "sourceType": "zone_drop",
+    "location": "Containers (desks, dressers, trunks, wardrobes, backpacks) in Cadwell's Silver zones (opposing alliance veteran zones)",
+    "notes": "Also sold via Crown Store historically as a 'rare style' pack. Low drop rate from containers.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "daedric",
+    "chapterId": 14,
+    "sourceType": "zone_drop",
+    "location": "Random rare loot drop from any base-game zone container/enemy",
+    "notes": "Base-game motif, chapters found as random world loot across Tamriel; also purchasable in Guild Stores. (Note: this is the original base-game Daedric Style, distinct from the newer 'Ancient Daedric Style' which is an Antiquities/Deadlands scry-and-excavate motif.)",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dwemer",
+    "chapterId": 15,
+    "sourceType": "zone_drop",
+    "location": "Dwarven pots/urns and chests inside Dwemer ruins (Craglorn, Bangkorai, Wrothgar, etc.)",
+    "notes": "Chapters looted from Dwarven-themed containers in various Dwemer ruin delves across multiple zones, not one single location. Also purchasable in Guild Stores.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "glass",
+    "chapterId": 16,
+    "sourceType": "master_writ",
+    "location": "Purchase full book from Rolis Hlaalu (Master Writs merchant) for 180 Writ Vouchers",
+    "notes": "Individual chapter fragments (10 needed per chapter + Merethic Restorative Resin) can also drop from daily crafting writs; fragments tradeable via Guild Stores. Also periodically in Crown Crates/Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "xivkyn",
+    "chapterId": 17,
+    "sourceType": "dungeon",
+    "location": "Trophy Vaults in Imperial City (opened with Key Fragments dropped in Sewers/Districts)",
+    "notes": "Imperial City DLC content (PvE/PvP hybrid zone). Guild Store purchase possible for players without Imperial City access.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "akaviri",
+    "chapterId": 18,
+    "sourceType": "pvp",
+    "location": "War Researcher vendors in Cyrodiil (one at each Border Keep)",
+    "notes": "Purchased with Alliance Points.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "mercenary",
+    "chapterId": 19,
+    "sourceType": "vendor",
+    "location": "Mystery Coffers sold by Undaunted vendors (Maj al-Ragath, Glirion the Redbeard, Urgarlag Chief-bane) at any Undaunted Enclave",
+    "notes": "Chapters are a random possible drop from purchased Pledge Masters' Mystery Coffers (gold currency), not a guaranteed buy. Crafting requires Laurel.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "yokudan",
+    "chapterId": 20,
+    "sourceType": "zone_drop",
+    "location": "Reward for completing repeatable daily quests in Craglorn",
+    "notes": "Also purchasable in Guild Stores; complete book has appeared as a Crown Crate legendary reward.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancient orc",
+    "chapterId": 21,
+    "sourceType": "dungeon",
+    "location": "Rare drop from enemies/containers in the public dungeons Old Orsinium and Rkindaleft (Wrothgar)",
+    "notes": "Chapters split evenly between the two public dungeons; must farm both. Also a Legendary Crown Crate reward and directly purchasable in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "trinimac",
+    "chapterId": 22,
+    "sourceType": "quest",
+    "location": "Repeatable daily delve quests for Guruzug in Morkul Stronghold, Wrothgar",
+    "notes": "Reward from daily delve-clearing quests, not a guaranteed drop every time.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "malacath",
+    "chapterId": 23,
+    "sourceType": "quest",
+    "location": "Repeatable daily world boss quests in Wrothgar",
+    "notes": "Reward from daily world boss quests (paired with Trinimac's delve dailies).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "outlaw",
+    "chapterId": 24,
+    "sourceType": "dungeon",
+    "location": "World/delve bosses in Hew's Bane (e.g. Krona Keeba in Shark's Teeth Grotto, Magnifico Bahraha in Bahraha's Gloom, Syvarra of the Deep in Ko Estaran, Captain Virindi Slave-Taker in Thrall Cove)",
+    "notes": "Specific chapter pieces drop from specific bosses (helms/legs/shields/shoulders/staves from Krona Keeba; boots/bows/chests/maces/swords from Magnifico Bahraha; axes/belts from Syvarra; daggers/gloves from Virindi). Rarely also from Reacquisition Board coffers in Daggerfall Thieves Den. Requires Rogue's Soot to craft.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "aldmeri dominion",
+    "chapterId": 25,
+    "sourceType": "pvp",
+    "location": "Treasure Chests in Cyrodiil/Imperial City (only opens for Aldmeri Dominion members)",
+    "notes": "Alliance-locked motif; only accessible to characters in that alliance via PvP zone chests. Style material is Eagle Feather, purchasable from Siege Merchants (10,000 AP) or Tel Var Merchants (1,000 Tel Var Stones).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "daggerfall covenant",
+    "chapterId": 26,
+    "sourceType": "pvp",
+    "location": "Treasure Chests in Cyrodiil/Imperial City (only opens for Daggerfall Covenant members)",
+    "notes": "Alliance-locked motif. Style material is Lion Fang, purchasable from Siege Merchants (10,000 AP) or Tel Var Merchants (1,000 Tel Var Stones).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "ebonheart pact",
+    "chapterId": 27,
+    "sourceType": "pvp",
+    "location": "Treasure Chests in Cyrodiil/Imperial City (only opens for Ebonheart Pact members)",
+    "notes": "Alliance-locked motif. Style material is Dragon Scute, purchasable from Siege Merchants (10,000 AP) or Tel Var Merchants (1,000 Tel Var Stones).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "ra gada",
+    "chapterId": 28,
+    "sourceType": "zone_drop",
+    "location": "Delve/World Bosses, locked Treasure Chests, and Treasure Maps in Craglorn",
+    "notes": "Multiple random-drop sources within Craglorn zone. Crafting requires Ancient Sandstone.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "soul shriven",
+    "chapterId": 29,
+    "sourceType": "quest",
+    "location": "Cadwell's Silver (completing the Silver questline in any alliance zone)",
+    "notes": "Motif book mailed automatically upon completing Cadwell's Silver (~25 quests). No DLC required. Style itself crafts using Azure Plasm from Dark Anchors/Dark Fissures.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "morag tong",
+    "chapterId": 30,
+    "sourceType": "quest",
+    "location": "Reward containers from daily quests given by Beleru Omoril and Traylan Omoril, Hall of Justice, Vivec City (Vvardenfell)",
+    "notes": "Also a Legendary Crown Crate reward (Buoyant Armiger Crown Crates). Crafting requires Boiled Carapace.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "skinchanger",
+    "chapterId": 31,
+    "sourceType": "event",
+    "location": "New Life Festival Boxes (New Life Festival event only)",
+    "notes": "Outside the festival window, chapters can only be bought via Guild Stores from players who obtained them during the event. Crafting requires Wolfsbane Incense.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "abah's watch",
+    "chapterId": 32,
+    "sourceType": "quest",
+    "location": "Large Laundered Shipment boxes from completing highest-tier Thieves Guild Tip Board quests (Hew's Bane)",
+    "notes": "Rarely also from the Reacquisition Board in Daggerfall Thieves Den. Also a Legendary Crown Crate reward and directly purchasable in Crown Store. Crafting requires Polished Shillings (from pickpocketing guards).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "thieves guild",
+    "chapterId": 33,
+    "sourceType": "quest",
+    "location": "Professional Thief's Satchel of Laundered Goods, reward for completing Heists within the time limit (Thieves Guild DLC, Hew's Bane)",
+    "notes": "Random chapter reward from timed Heist quests.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "assassins league",
+    "chapterId": 34,
+    "sourceType": "dungeon",
+    "location": "World/delve bosses in Gold Coast (Ironfang in Garlas Agea, Exulus in Hrota Cave, Limenauruus in Tribune's Folly, Knight Commander Panthius in Kvatch Arena)",
+    "notes": "Different armor slot chapters drop from different named bosses. Also purchasable in Guild Stores without Dark Brotherhood DLC.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dro-m'athra",
+    "chapterId": 35,
+    "sourceType": "trial",
+    "location": "Rakkhat, final boss of Maw of Lorkhaj trial (Normal/Veteran; guaranteed on Veteran Hard Mode)",
+    "notes": "Also available weekly from the 'Into the Maw' weekly quest coffer, and as a Legendary Crown Crate reward (Scalecaller/Unfeathered crates). Crafting requires Defiled Whiskers.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dark brotherhood",
+    "chapterId": 36,
+    "sourceType": "quest",
+    "location": "Reward from completing Dark Brotherhood Sacraments/daily quests (Gold Coast)",
+    "notes": "Also a Legendary Crown Crate reward (Reaper's Harvest Crown Crates). Crafting requires Black Beeswax.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ebony",
+    "chapterId": 37,
+    "sourceType": "master_writ",
+    "location": "Purchase full book or chapters from Rolis Hlaalu (Master Writs merchant) using Writ Vouchers",
+    "notes": "Requires rank 10 in Metalworking/Tailoring/Woodworking passive to read. This is the classic base-game Ebony style.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "draugr",
+    "chapterId": 38,
+    "sourceType": "quest",
+    "location": "Reward from Fighters Guild dailies, Mages Guild dailies, and Undaunted delve dailies",
+    "notes": "Rare chance from multiple different daily quest reward pools rather than one specific source. Also a Legendary Crown Crate reward (Dwarven Crown Crates) and purchasable in Guild Stores.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "minotaur",
+    "chapterId": 39,
+    "sourceType": "quest",
+    "location": "Small chance from the Minotaur world-boss bounty quest via the Kvatch Bounty Board (Gold Coast)",
+    "notes": "Bounty Board in Kvatch randomly offers either the Kvatch Arena quest or the Minotaur world boss quest; only completing the Minotaur quest has a chance at this motif page. Also a Legendary Crown Crate reward (Dwarven Crown Crates).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "order hour",
+    "chapterId": 40,
+    "sourceType": "quest",
+    "location": "Small chance from completing the Kvatch Arena quest via the Kvatch Bounty Board (Gold Coast)",
+    "notes": "Alternatively the complete book has been sold directly in the Crown Store (historically ~4,000 crowns) and as a Legendary Crown Crate reward (Dwarven Crown Crates).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "celestial",
+    "chapterId": 41,
+    "sourceType": "trial",
+    "location": "Weekly reward coffers for clearing Craglorn trials (Aetherian Archive, Hel Ra Citadel, Sanctum Ophidia)",
+    "notes": "Possible chapter drop (or rarely full book) from the weekly trial completion reward coffer.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "hollowjack",
+    "chapterId": 42,
+    "sourceType": "event",
+    "location": "Witches Festival Writs (Witchmother's Whistling Wickerflask event) — each writ grants a Witchly Gift with a random chapter",
+    "notes": "Previously chapters were sold in Witches' Festival event currency bags from the Impresario; now tied to event-specific crafting writs. Event-limited.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "silken ring",
+    "chapterId": 44,
+    "sourceType": "dungeon",
+    "location": "Velidreth, final boss of Cradle of Shadows group dungeon (Shadows of the Hist DLC)",
+    "notes": "Chance on Normal/Veteran, higher chance on Veteran Hard Mode. Also a Legendary Crown Crate reward, purchasable in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "mazzatun",
+    "chapterId": 45,
+    "sourceType": "dungeon",
+    "location": "Tree-Minder Na-Kesh, final boss of Ruins of Mazzatun group dungeon (Shadows of the Hist DLC)",
+    "notes": "Possible drop on Normal/Veteran, guaranteed drop on Veteran Hard Mode. Also a Legendary Crown Crate reward.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "buoyant armiger",
+    "chapterId": 47,
+    "sourceType": "zone_drop",
+    "location": "Treasure chests around Vvardenfell and within Halls of Fabrication trial",
+    "notes": "Chance improves with the 'Champion of Vivec' achievement. Also sold directly in Crown Store and as Legendary Crown Crate reward (Reaper's Harvest Crown Crates).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "ashlander",
+    "chapterId": 48,
+    "sourceType": "quest",
+    "location": "Reward containers from daily quests given by Huntmaster Sorim-Nakar or Numani-Rasi in Ald'ruhn (Vvardenfell), unlocked after 'Ancestral Ties' and 'Ashlander Relations' quests",
+    "notes": "Also a Legendary Crown Crate reward (Reaper's Harvest Crown Crates). Requires Morrowind DLC or ESO Plus.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "militant ordinator",
+    "chapterId": 49,
+    "sourceType": "pvp",
+    "location": "Battleground Supplies Merchant (Alliance Points vendor)",
+    "notes": "Purchasable with Alliance Points from Battlegrounds vendors, unlike most other Vvardenfell house/faction motifs.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "telvanni",
+    "chapterId": 50,
+    "sourceType": "zone_drop",
+    "location": "Pickpocketing NPCs or looting Safeboxes/Thieves Troves within Vvardenfell",
+    "notes": "Random-chance loot from pickpocketing and lockboxes across the zone rather than one fixed spot.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "hlaalu",
+    "chapterId": 51,
+    "sourceType": "zone_drop",
+    "location": "Pickpocketing NPCs or looting Safeboxes/Thieves Troves within Vvardenfell",
+    "notes": "Same acquisition method as Telvanni/Redoran — random chance loot across Vvardenfell.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "redoran",
+    "chapterId": 52,
+    "sourceType": "zone_drop",
+    "location": "Pickpocketing NPCs or looting Safeboxes/Thieves Troves within Vvardenfell",
+    "notes": "Same acquisition method as Telvanni/Hlaalu — random chance loot across Vvardenfell.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "bloodforge",
+    "chapterId": 54,
+    "sourceType": "dungeon",
+    "location": "Earthgore Amalgam, final boss of Bloodroot Forge group dungeon (Horns of the Reach DLC)",
+    "notes": "Chance on Normal/Veteran, better odds on Veteran Hard Mode. Crafting requires Bloodroot Flux.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dreadhorn",
+    "chapterId": 55,
+    "sourceType": "dungeon",
+    "location": "Domihaus, final boss of Falkreath Hold group dungeon (Horns of the Reach DLC)",
+    "notes": "Chance on Normal/Veteran, better odds on Veteran Hard Mode. Crafting requires Minotaur Bezoar.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "apostle",
+    "chapterId": 56,
+    "sourceType": "quest",
+    "location": "Daily quests for Novice Holli, Clockwork Facilitator, or Razgurug in Brass Fortress (Clockwork City DLC) — 'Slag Town Coffer' reward",
+    "notes": "Also a Legendary Crown Crate reward (Hollowjack Crown Crates); Guild Store purchasable without the DLC.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ebonshadow",
+    "chapterId": 57,
+    "sourceType": "quest",
+    "location": "Daily quests for Novice Holli, Clockwork Facilitator, or Bursar of Tributes in Clockwork City — 'Crow-Touched Clockwork Coffer' reward",
+    "notes": "Also a Legendary Crown Crate reward (Hollowjack Crown Crates); Guild Store purchasable without the DLC.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "fang lair",
+    "chapterId": 58,
+    "sourceType": "dungeon",
+    "location": "Thurvokun, final boss of Fang Lair group dungeon (Dragon Bones DLC)",
+    "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also a Legendary Crown Crate reward (Celestial Crown Crates).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "scalecaller",
+    "chapterId": 59,
+    "sourceType": "dungeon",
+    "location": "Zaan the Scalecaller, final boss of Scalecaller Peak group dungeon (Dragon Bones DLC)",
+    "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also periodically sold directly in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "worm cult",
+    "chapterId": 60,
+    "sourceType": "event",
+    "location": "Anniversary Jubilee event boxes",
+    "notes": "Tied to the yearly Anniversary Jubilee event; also purchasable via Guild Stores outside the event window. Crafting requires Desecrated Grave Soil.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "psijic",
+    "chapterId": 61,
+    "sourceType": "zone_drop",
+    "location": "Random drop from activities throughout Summerset (chests, world content, fishing, etc.)",
+    "notes": "Drop chance scales with rank in the Psijic Order skill line — higher rank greatly increases odds. Crafting requires Vitrified Malondo.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "sapiarch",
+    "chapterId": 62,
+    "sourceType": "quest",
+    "location": "Daily quests for the Divine Prosecution and interacting with Psijic Portals in Summerset",
+    "notes": "Also a Legendary Crown Crate reward (Diamond Anniversary Crown Crates) and directly purchasable when that crate is available.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "dremora",
+    "chapterId": 63,
+    "sourceType": "event",
+    "location": "Dremora Plunder Skulls during the Witches Festival",
+    "notes": "Purchasable in Guild Stores outside the festival window.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "pyandonean",
+    "chapterId": 64,
+    "sourceType": "zone_drop",
+    "location": "Fishing (Pyandonean Bottles), Treasure Chests, and Psijic Portals in Summerset",
+    "notes": "Multiple random sources within Summerset zone. Also a Legendary Crown Crate reward (Psijic Vault Crown Crates).",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "huntsman",
+    "chapterId": 65,
+    "sourceType": "dungeon",
+    "location": "Balorgh, final boss of March of Sacrifice group dungeon (Wolfhunter DLC)",
+    "notes": "Chance on Normal/Veteran; better odds on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "silver dawn",
+    "chapterId": 66,
+    "sourceType": "dungeon",
+    "location": "Vykosa the Ascendant, final boss of Moon Hunter Keep group dungeon (Wolfhunter DLC)",
+    "notes": "Chance on Normal/Veteran, guaranteed on Veteran Hard Mode. Also a Legendary Crown Crate reward (Dark Chivalry Crown Crates); Guild Store purchasable without the DLC.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "welkynar",
+    "chapterId": 67,
+    "sourceType": "trial",
+    "location": "Cloudrest (Summerset)",
+    "notes": "Farm Welkynar Style Motif Fragments (10 needed per chapter) from Z'Maja, the final boss of Cloudrest, on Veteran (guaranteed some fragments) or Normal with all three Welkynar Shades present. Fragments are combined with a Welkynar Binding obtained once per week from the repeatable quest 'Woe of the Welkynars' in the trial.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "honor guard",
+    "chapterId": 68,
+    "sourceType": "dungeon",
+    "location": "Blackrose Prison (Arena, Murkmire)",
+    "notes": "Chapters drop from the final boss of the 4-player Blackrose Prison arena; higher chance on Veteran. Also periodically offered in Crown Store/Crown Crates.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dead-water",
+    "chapterId": 69,
+    "sourceType": "quest",
+    "location": "Murkmire daily quests (Lilmoth / Root-Whisper Village)",
+    "notes": "Reward crates from repeatable dailies: Tribal Armor Crate (Varo Hosidias, Lilmoth), Grand Tribal Armor Crate (Bolu, Lilmoth), Tribal Treasure Crate (Tuwul, Root-Whisper Village).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "elder argonian",
+    "chapterId": 70,
+    "sourceType": "quest",
+    "location": "Murkmire daily quests (Lilmoth / Root-Whisper Village)",
+    "notes": "Same reward crate pool as Dead-Water (Tribal Armor/Grand Tribal Armor/Tribal Treasure Crates) from Murkmire dailies for Bolu, Varo Hosidias, and Tuwul.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "coldsnap",
+    "chapterId": 71,
+    "sourceType": "dungeon",
+    "location": "Frostvault",
+    "notes": "Chapters drop from the final boss (Stone Husk/Vault Guardian) with increasing chance on higher difficulty. Also occasionally sold in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "meridian",
+    "chapterId": 72,
+    "sourceType": "dungeon",
+    "location": "Depths of Malatar",
+    "notes": "Possible drop from final boss Symphony of Blades on Normal/Veteran; guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "anequina",
+    "chapterId": 73,
+    "sourceType": "quest",
+    "location": "Rimmen, Northern Elsweyr",
+    "notes": "Elsweyr Daily Merit Coffer reward from repeatable World Boss/Delve daily quests for Ri'hirr and Nisuzi in Rimmen.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "pellitine",
+    "chapterId": 74,
+    "sourceType": "quest",
+    "location": "Rimmen, Northern Elsweyr",
+    "notes": "Elsweyr Dragon Hunter's Coffer reward from the repeatable Dragon Hunt daily quest given by Battlereeve Tanerline in Rimmen.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "sunspire",
+    "chapterId": 75,
+    "sourceType": "trial",
+    "location": "Sunspire (Northern Elsweyr)",
+    "notes": "Possible page drop from final boss Nahviintaas (guaranteed on Veteran Hard Mode), or from Dragon God's Time-Worn/Pristine Hoard weekly reward for completing 'The Return of Alkosh'.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dragonguard",
+    "chapterId": 76,
+    "sourceType": "quest",
+    "location": "Southern Elsweyr (Dragonguard Sanctum)",
+    "notes": "Possible reward from Dragon Hunt/Delve daily quests given by Chizbari the Chipper and Dirge Truptor. Complete book also appeared as a Crown Store/Crown Crate legendary reward.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "stags of z'en",
+    "chapterId": 77,
+    "sourceType": "dungeon",
+    "location": "Lair of Maarselok",
+    "notes": "Possible drop from final boss Maarselok, guaranteed on Veteran Hard Mode. Also sold in Crown Store and as Celestial Crown Crates legendary reward.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "moongrave fane",
+    "chapterId": 78,
+    "sourceType": "dungeon",
+    "location": "Moongrave Fane",
+    "notes": "Possible drop from final boss Grundwulf, guaranteed on Veteran Hard Mode. Also sold in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "refabricated",
+    "chapterId": 79,
+    "sourceType": "trial",
+    "location": "Halls of Fabrication",
+    "notes": "Possible drop from final boss Assembly General (guaranteed on Veteran Hardmode), or from the weekly quest 'Forging the Future' given by Divayth Fyr.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "shield of senchal",
+    "chapterId": 80,
+    "sourceType": "quest",
+    "location": "Senchal, Southern Elsweyr (Dragonhold)",
+    "notes": "Senchal Reward Chest from delve/World Boss daily quests given by Bruccius Baenius and Guybert Flaubert.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "new moon priest",
+    "chapterId": 81,
+    "sourceType": "achievement",
+    "location": "Dragonguard Sanctum, Southern Elsweyr (Dragonhold)",
+    "notes": "Unlocked via the Dragonguard Operative achievement (30 Dragonguard-related quests, including main Dragonhold story and dailies). Once unlocked, chapters come from the daily Dragonguard Supply Chest (one open per day, 14 chapters total).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "icereach coven",
+    "chapterId": 82,
+    "sourceType": "dungeon",
+    "location": "Icereach",
+    "notes": "Possible drop from final boss Mother Ciannait, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "pyre watch",
+    "chapterId": 83,
+    "sourceType": "dungeon",
+    "location": "Unhallowed Grave",
+    "notes": "Possible drop from final boss Kjalnar Tombskald, guaranteed on Veteran Hard Mode. Also periodically in Crown Store and Stonelore Crown Crates.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "blackreach vanguard",
+    "chapterId": 84,
+    "sourceType": "quest",
+    "location": "Western Skyrim / Blackreach: Greymoor Caverns",
+    "notes": "Reward containers from delve and World Boss daily quests; speak to Hidaver and Tinzen in Solitude to start the dailies.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "greymoor",
+    "chapterId": 85,
+    "sourceType": "quest",
+    "location": "Western Skyrim (The Reach)",
+    "notes": "Obtained from Harrowstorm daily quests (Swordthane Jylta) and from Reliquary Remnants left after quelling a Harrowstorm event in the world.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "sea giant",
+    "chapterId": 86,
+    "sourceType": "trial",
+    "location": "Kyne's Aegis (Western Skyrim)",
+    "notes": "Possible drop from final boss Lord Falgravn (guaranteed on Veteran Hard Mode), or from Kyne's Mundane/Gleaming Coffer weekly reward for 'The Fight for Kyne's Aegis'.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral nord",
+    "chapterId": 87,
+    "sourceType": "other",
+    "location": "Antiquities system, Ebonheart Pact zones",
+    "notes": "Requires the Antiquities skill line (unlocked via Greymoor). Leads drop from treasure map chests in EP zones (Bleakrock Isle, Shadowfen, Stonefalls, The Rift, Eastmarch, Bal Foyen, Deshaan); chapters are then excavated as antiquities.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral orc",
+    "chapterId": 88,
+    "sourceType": "other",
+    "location": "Antiquities system, Daggerfall Covenant zones",
+    "notes": "Requires Antiquities skill line. Leads drop from treasure map chests in DC zones (Alik'r Desert, Stros M'Kai, Rivenspire, Glenumbra, Betnikh, Stormhaven), then excavated.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral high elf",
+    "chapterId": 89,
+    "sourceType": "other",
+    "location": "Antiquities system, Aldmeri Dominion zones",
+    "notes": "Requires Antiquities skill line. Leads drop from treasure map chests in AD zones (Khenarthi's Roost, Greenshade, Auridon, Malabal Tor, Reaper's March, Grahtwood), then excavated.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "thorn legion",
+    "chapterId": 90,
+    "sourceType": "dungeon",
+    "location": "Castle Thorn",
+    "notes": "Possible drop from final boss Lady Thorn, guaranteed on Veteran Hard Mode. Also periodically in Crown Store and Wraithtide Crown Crates.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "hazardous alchemy",
+    "chapterId": 91,
+    "sourceType": "dungeon",
+    "location": "Stone Garden (Blackreach, Western Skyrim)",
+    "notes": "Possible drop from final boss Arkasis the Mad Alchemist, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral akaviri",
+    "chapterId": 92,
+    "sourceType": "other",
+    "location": "Antiquities system, Blackwood",
+    "notes": "Requires Antiquities skill line and Blackwood. Leads drop from Blackwood treasure map chests, then excavated as antiquities.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral breton",
+    "chapterId": 93,
+    "sourceType": "other",
+    "location": "Antiquities system, High Isle",
+    "notes": "Requires Antiquities skill line and High Isle. Leads drop from High Isle treasure map chests (also from High Isle Coffers during the Legacy of the Bretons event), then excavated.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ancestral reach",
+    "chapterId": 94,
+    "sourceType": "other",
+    "location": "Antiquities system, The Reach",
+    "notes": "Requires Antiquities skill line and Markarth. Leads drop from treasure map chests in The Reach, Blackreach: Arkthzand Cavern, and Western Skyrim, then excavated in The Reach.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "nighthollow",
+    "chapterId": 95,
+    "sourceType": "quest",
+    "location": "Markarth / The Reach",
+    "notes": "Markarth Reward Coffer from Harrowstorm daily quests for Nelldena in Markarth, or directly from Reach Harrowstorm events. Also periodically in Crown Store.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "arkthzand armory",
+    "chapterId": 96,
+    "sourceType": "quest",
+    "location": "The Reach (Markarth)",
+    "notes": "Reward from delve/World Boss daily quests for Bralthahawn and Nelldena in The Reach.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "wayward guardian",
+    "chapterId": 97,
+    "sourceType": "quest",
+    "location": "Markarth (The Reach)",
+    "notes": "Drops from the Wayward Guardian's Cache, awarded for completing daily quests from Ardanir in Markarth (unlocked after the Reach main quest 'A Feast of Souls'). Also has a chance as a Tales of Tribute daily victory reward. Drop rate widely reported as very low.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "house hexos",
+    "chapterId": 98,
+    "sourceType": "quest",
+    "location": "Fargrave (Deadlands)",
+    "notes": "Reward from Saraathu Tong or Gleaners of Aurbis daily quests, or delve dailies from Luna Beriel, in Fargrave.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "waking flame",
+    "chapterId": 99,
+    "sourceType": "dungeon",
+    "location": "The Cauldron",
+    "notes": "Possible drop from final boss Baron Zaudrus, guaranteed on Veteran Hard Mode. Also periodically in Crown Store and Mirrormoor Crown Crates.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "true-sworn",
+    "chapterId": 100,
+    "sourceType": "dungeon",
+    "location": "Black Drake Villa (Gold Coast)",
+    "notes": "Possible drop from final boss Pyroturge Encratis, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ivory brigade",
+    "chapterId": 101,
+    "sourceType": "quest",
+    "location": "Leyawiin (Blackwood)",
+    "notes": "Leyawiin Reward Coffer from daily group boss quests given by Britta Silanus.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "sul-xan",
+    "chapterId": 102,
+    "sourceType": "trial",
+    "location": "Rockgrove (Blackwood)",
+    "notes": "Possible drop from final boss Xalvakka (guaranteed on Veteran Hard Mode), or from the weekly quest 'Of Stone and Steam' given by Dust-On-Scales.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "black fin legion",
+    "chapterId": 103,
+    "sourceType": "quest",
+    "location": "Blackwood",
+    "notes": "Occasional reward from delve daily quests given by Deetum-Jas in Blackwood.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "ancient daedric",
+    "chapterId": 104,
+    "sourceType": "other",
+    "location": "Antiquities system, Deadlands",
+    "notes": "Requires Antiquities skill line and Deadlands. Leads drop from Deadlands treasure map chests, then excavated as antiquities.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "crimson oath",
+    "chapterId": 105,
+    "sourceType": "dungeon",
+    "location": "Dread Cellar",
+    "notes": "Possible drop from final boss (Magma Incarnate), guaranteed on Veteran Hard Mode. Also periodically in Crown Store and Buoyant Armiger Crown Crates.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "silver rose",
+    "chapterId": 106,
+    "sourceType": "dungeon",
+    "location": "Red Petal Bastion",
+    "notes": "Possible drop from final boss Prior Thierric Sarazen, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "annihilarch's chosen",
+    "chapterId": 107,
+    "sourceType": "other",
+    "location": "Deadlands Oblivion Portals",
+    "notes": "Possible chest reward after defeating the final boss (e.g. Havocrel Duke of Storms) at the end of a random Oblivion Portal event in the Deadlands. Limited to one style page per account per day (resets with daily crafting writs).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "fargrave guardian",
+    "chapterId": 108,
+    "sourceType": "quest",
+    "location": "Fargrave (Deadlands)",
+    "notes": "Deadlands Reward Coffer from World Boss daily quests given by Vaveli Indavel in Fargrave.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dreadsails",
+    "chapterId": 110,
+    "sourceType": "dungeon",
+    "location": "Shipwright's Regret",
+    "notes": "Possible drop from final boss Captain Numirril, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "ascendant order",
+    "chapterId": 111,
+    "sourceType": "dungeon",
+    "location": "Coral Aerie",
+    "notes": "Possible drop from final boss Varallion, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "syrabanic marine",
+    "chapterId": 112,
+    "sourceType": "trial",
+    "location": "Dreadsail Reef (High Isle)",
+    "notes": "Possible drop from final boss Tideborn Taleria (guaranteed on Veteran Hard Mode), or from the weekly coffer for completing 'Reavers of the Reef' (Admiral Galvendier quest line).",
+    "confidence": "high"
+  },
+  {
+    "styleName": "steadfast society",
+    "chapterId": 113,
+    "sourceType": "quest",
+    "location": "Gonfalon Bay, High Isle",
+    "notes": "Reward from World Boss daily quests given by Parisse Plouff in Gonfalon Bay.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "systres guardian",
+    "chapterId": 114,
+    "sourceType": "quest",
+    "location": "Gonfalon Bay, High Isle",
+    "notes": "High Isle Reward Coffer from delve daily quests given by Wayllod in Gonfalon Bay.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "y'ffre's will",
+    "chapterId": 115,
+    "sourceType": "dungeon",
+    "location": "Earthen Root Enclave",
+    "notes": "Possible drop from final boss Archdruid Devyric, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "drowned mariner",
+    "chapterId": 116,
+    "sourceType": "dungeon",
+    "location": "Graven Deep",
+    "notes": "Possible drop from final boss Zelvraak the Unbreathing, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "firesong",
+    "chapterId": 117,
+    "sourceType": "quest",
+    "location": "Galen (Firesong)",
+    "notes": "Reward from Volcanic Vent daily quests given by Druid Aishabeh in Vastyr, and directly from completing Volcanic Vent world events; also occasional bonus loot from Antiquities excavation in High Isle.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "house mornard",
+    "chapterId": 118,
+    "sourceType": "quest",
+    "location": "Galen (Firesong)",
+    "notes": "Galen Reward Coffer from delve/World Boss daily quests given by Juline Courcelles and Druid Gastoc.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "blessed inheritor",
+    "chapterId": 119,
+    "sourceType": "dungeon",
+    "location": "Bal Sunnar",
+    "notes": "Possible drop from final boss Matriarch Lladi Telvanni, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "scribes of mora",
+    "chapterId": 120,
+    "sourceType": "dungeon",
+    "location": "Scrivener's Hall",
+    "notes": "Possible drop from final boss Valinna, guaranteed on Veteran Hard Mode. Also reported as a rare drop from Trophy Vault (undaunted key) chests.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "clan dreamcarver",
+    "chapterId": 121,
+    "sourceType": "trial",
+    "location": "Sanity's Edge (Necrom)",
+    "notes": "Possible drop from final boss Ansuul the Tormentor (guaranteed on Veteran Hard Mode), or from the weekly trial coffer for completing 'The War Within'.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "dead keeper",
+    "chapterId": 122,
+    "sourceType": "quest",
+    "location": "Necrom",
+    "notes": "Necrom Reward Coffer from delve daily quests (Ordinator Tilena) or World Boss daily quests (Ordinator Nelyn) in Necrom.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "kindred's concord",
+    "chapterId": 123,
+    "sourceType": "other",
+    "location": "Necrom / Apocrypha",
+    "notes": "Chance to drop from the public dungeon boss Bastion Nymic and its daily coffer (from Ordinator Tandasea in Necrom), from Psijic Portals on the Telvanni Peninsula, and from Antiquities excavation in Apocrypha. Drop is capped at one per account per day.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "the recollection",
+    "chapterId": 124,
+    "sourceType": "dungeon",
+    "location": "Oathsworn Pit (Scions of Ithelia)",
+    "notes": "Possible drop from final boss Aradros the Awakened, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "blind path cultist",
+    "chapterId": 125,
+    "sourceType": "dungeon",
+    "location": "Bedlam Veil (Scions of Ithelia)",
+    "notes": "Possible drop from final boss the Blind, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "shardborn",
+    "chapterId": 126,
+    "sourceType": "quest",
+    "location": "Skingrad (West Weald, Gold Road)",
+    "notes": "Skingrad Reward Coffer from delve/World Boss daily quests given by Commandant Salerius and Lieutenant Agrance; also occasional drop from Psijic Portals and Antiquity dig sites in West Weald.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "west weald legion",
+    "chapterId": 127,
+    "sourceType": "quest",
+    "location": "Skingrad (West Weald, Gold Road)",
+    "notes": "Skingrad Reward Coffer from daily quests given by Legionary Jaida, or directly from completing Mirrormoor Incursion world events.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "lucent sentinel",
+    "chapterId": 128,
+    "sourceType": "trial",
+    "location": "Lucent Citadel (Gold Road)",
+    "notes": "Possible drop from final boss Xoryn (guaranteed on Veteran Hard Mode), or from the weekly trial coffer given by Keshargo in West Weald.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "hircine bloodhunter",
+    "chapterId": 129,
+    "sourceType": "crown_store",
+    "location": "Dark Brotherhood Crown Crates (Legendary tier)",
+    "notes": "Not farmable in-game. Buy directly for 100 Crown Gems, or 3,600 Seals of Endeavor (earned via in-game activities, no real money required for that route). Complete book unlocks all pieces at once.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "exile's revenge",
+    "chapterId": 130,
+    "sourceType": "dungeon",
+    "location": "Exiled Redoubt (Fallen Banners)",
+    "notes": "Possible drop from final boss Squall of Retribution, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "militant monk",
+    "chapterId": 131,
+    "sourceType": "dungeon",
+    "location": "Lep Seclusa (Fallen Banners)",
+    "notes": "Possible drop from final boss Orpheon the Tactician, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "stirk fellowship",
+    "chapterId": 132,
+    "sourceType": "other",
+    "location": "Solstice / Writhing Wall (2025 Content Pass)",
+    "notes": "Drops from Incursion Chests looted after defending Solstice Siege Camps, and from Reward Coffers for the 'Battle for the Writhing Wall' daily quests. Some early reports of very low/inconsistent drop rates on release.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "coldharbour dominator",
+    "chapterId": 133,
+    "sourceType": "trial",
+    "location": "Vault of Agony (Western Solstice)",
+    "notes": "Possible drop from final boss Overfiend Kazpian (guaranteed on Veteran Hard Mode), or from the Ossein Cage weekly trial coffer.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "tide-born",
+    "chapterId": 134,
+    "sourceType": "quest",
+    "location": "Sunport (Western Solstice)",
+    "notes": "Reward from delve daily quests (Lector Volonaro) and World Boss daily quests (Morlia) in Sunport; also occasional drop from Psijic Portals and Antiquities excavation in Western Solstice.",
+    "confidence": "medium"
+  },
+  {
+    "styleName": "black soul gem",
+    "chapterId": 135,
+    "sourceType": "dungeon",
+    "location": "Black Gem Foundry (Feast of Shadows)",
+    "notes": "Possible drop from final boss High Soulbinder Vykand, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "voskrona guardian",
+    "chapterId": 136,
+    "sourceType": "dungeon",
+    "location": "Naj-Caldeesh (Feast of Shadows)",
+    "notes": "Possible drop from final boss Talen-Lah, guaranteed on Veteran Hard Mode.",
+    "confidence": "high"
+  },
+  {
+    "styleName": "koldane cartel",
+    "chapterId": 137,
+    "sourceType": "quest",
+    "location": "Daggerfall Thieves Den",
+    "notes": "Coffers from completing daily quests off the Reacquisition Board (or more rarely the Heist Board) in the Daggerfall Thieves Den. Players reported low drop rates shortly after release.",
+    "confidence": "medium"
+  }
+]

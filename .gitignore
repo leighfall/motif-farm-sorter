@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Raw TTC addon dumps are large (~7MB) and just source material for
+# build:data — only the generated data/motifs.json is committed.
+data/*.lua
