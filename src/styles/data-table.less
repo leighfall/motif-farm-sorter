@@ -1,0 +1,43 @@
+@import './variables.less';
+
+.data-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: left;
+
+  th,
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  th {
+    color: var(--text-h);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  tbody tr {
+    transition: background-color 0.15s ease, color 0.15s ease;
+
+    &:hover {
+      background-color: var(--accent-bg);
+      color: var(--accent);
+    }
+  }
+
+  @media (max-width: @breakpoint-mobile) {
+    font-size: 13px;
+
+    th,
+    td {
+      padding: 6px 8px;
+    }
+  }
+}

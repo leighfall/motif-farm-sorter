@@ -1,31 +1,47 @@
 import { useMemo, useState } from 'react';
 import './App.less'
 import { MotifTable } from './components/MotifTable'
+import { DungeonTable } from './components/DungeonTable'
 import { getMotifRows } from './data/getMotifRows'
+import { getDungeonRows } from './data/getDungeonRows'
 import { sourceTypeFilter } from './data/constants';
 import { DropdownFilter } from './components/DropdownFilter';
-import type { MotifSourceType, SortState } from './data/types';
+import type { DungeonSortableColumn, MotifSortableColumn, MotifSourceType, SortState } from './data/types';
 
 const motifRows = getMotifRows();
+const dungeonRows = getDungeonRows(motifRows);
+
+type View = 'pieces' | 'dungeons';
+
+// Shared by both tabs' sort handlers: same-column click flips direction,
+// different-column click switches to it and resets to ascending.
+function toggleSort<TColumn extends string>(current: SortState<TColumn>, column: TColumn): SortState<TColumn> {
+  if (current.column === column) {
+    return { column, direction: current.direction === 'asc' ? 'desc' : 'asc' };
+  }
+  return { column, direction: 'asc' };
+}
 
 function App() {
+  const [view, setView] = useState<View>('pieces');
   const [activeFilter, setActiveFilter] = useState<MotifSourceType | 'all'>('all');
-  const [sort, setSort] = useState<SortState>({ column: 'styleName', direction: 'asc' });
+  const [motifSort, setMotifSort] = useState<SortState<MotifSortableColumn>>({ column: 'styleName', direction: 'asc' });
+  const [dungeonSort, setDungeonSort] = useState<SortState<DungeonSortableColumn>>({
+    column: 'avgPieceValue',
+    direction: 'desc',
+  });
   const [hideStylePiece, setHideStylePiece] = useState(false);
 
   function dropdownClick(evt: MotifSourceType | 'all') {
     setActiveFilter(evt);
   }
 
-  // Clicking the currently-sorted column flips its direction; clicking a
-  // different column switches to it and resets to ascending.
-  function handleSort(column: SortState['column']) {
-    setSort((current) => {
-      if (current.column === column) {
-        return { column, direction: current.direction === 'asc' ? 'desc' : 'asc' };
-      }
-      return { column, direction: 'asc' };
-    });
+  function handleMotifSort(column: MotifSortableColumn) {
+    setMotifSort((current) => toggleSort(current, column));
+  }
+
+  function handleDungeonSort(column: DungeonSortableColumn) {
+    setDungeonSort((current) => toggleSort(current, column));
   }
 
   const visibleMotifList = useMemo(() => {
@@ -34,14 +50,14 @@ function App() {
 
     const filtered = hideStylePiece ? bySourceType.filter((row) => row.pieceName !== 'style') : bySourceType;
 
-    const directionMultiplier = sort.direction === 'asc' ? 1 : -1;
+    const directionMultiplier = motifSort.direction === 'asc' ? 1 : -1;
 
     // Copy with toSorted (rather than .sort()) so we don't mutate `filtered`
     // in place — `filtered` may be the same array reference as `motifRows`
     // (the 'all' case above), and `motifRows` must stay untouched.
     return filtered.toSorted((a, b) => {
-      const aValue = a[sort.column];
-      const bValue = b[sort.column];
+      const aValue = a[motifSort.column];
+      const bValue = b[motifSort.column];
 
       if (typeof aValue === 'string' && typeof bValue === 'string') {
         return aValue.localeCompare(bValue) * directionMultiplier;
@@ -55,25 +71,32 @@ function App() {
       const bNumber = bValue === null ? Infinity : (bValue as number);
       return (aNumber - bNumber) * directionMultiplier;
     });
-  }, [activeFilter, hideStylePiece, sort]);
-  // TODO: filtering (by piece, price range, etc.) beyond source type, plus
-  // sorting on the remaining columns (Avg Price, Min, Max) following the
-  // `handleSort`/`sort` pattern above — see MotifTable's Style header for
-  // the reference wiring.
+  }, [activeFilter, hideStylePiece, motifSort]);
+
+  const visibleDungeonList = useMemo(() => {
+    const directionMultiplier = dungeonSort.direction === 'asc' ? 1 : -1;
+
+    return dungeonRows.toSorted((a, b) => {
+      const aValue = a[dungeonSort.column];
+      const bValue = b[dungeonSort.column];
+
+      if (typeof aValue === 'string' && typeof bValue === 'string') {
+        return aValue.localeCompare(bValue) * directionMultiplier;
+      }
+
+      // Same "null = most valuable" convention as the piece view — a dungeon
+      // with no current listings for any piece is the most valuable to farm.
+      const aNumber = aValue === null ? Infinity : (aValue as number);
+      const bNumber = bValue === null ? Infinity : (bValue as number);
+      return (aNumber - bNumber) * directionMultiplier;
+    });
+  }, [dungeonSort]);
+
   return (
     <section id="motif-table-section">
       <div className="motif-table-header">
-        <h1>ESO Motif Farm Sorter</h1>
-        <div className="motif-table-controls">
-          <label className="hide-style-piece-toggle">
-            <input
-              type="checkbox"
-              checked={hideStylePiece}
-              onChange={(event) => setHideStylePiece(event.target.checked)}
-            />
-            Hide "Style" piece
-          </label>
-          <DropdownFilter options={sourceTypeFilter} activeFilter={activeFilter} onChange={dropdownClick} />
+        <div className="motif-table-title-row">
+          <h1>ESO Motif Farm Sorter</h1>
           <a
             href="https://github.com/leighfall/motif-farm-sorter"
             target="_blank"
@@ -84,8 +107,49 @@ function App() {
             <i className="fa-brands fa-github"></i>
           </a>
         </div>
+        <div className="motif-table-controls">
+          <div className="view-tabs" role="tablist">
+            <button
+              type="button"
+              role="tab"
+              aria-selected={view === 'pieces'}
+              className={`view-tab ${view === 'pieces' ? 'active' : ''}`}
+              onClick={() => setView('pieces')}
+            >
+              All Motifs
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected={view === 'dungeons'}
+              className={`view-tab ${view === 'dungeons' ? 'active' : ''}`}
+              onClick={() => setView('dungeons')}
+            >
+              By Dungeon
+            </button>
+          </div>
+          <label className="hide-style-piece-toggle">
+            <input
+              type="checkbox"
+              checked={hideStylePiece}
+              onChange={(event) => setHideStylePiece(event.target.checked)}
+              disabled={view === 'dungeons'}
+            />
+            Hide "Style" piece
+          </label>
+          <DropdownFilter
+            options={sourceTypeFilter}
+            activeFilter={activeFilter}
+            onChange={dropdownClick}
+            disabled={view === 'dungeons'}
+          />
+        </div>
       </div>
-      <MotifTable rows={visibleMotifList} sort={sort} onSort={handleSort} />
+      {view === 'pieces' ? (
+        <MotifTable rows={visibleMotifList} sort={motifSort} onSort={handleMotifSort} />
+      ) : (
+        <DungeonTable rows={visibleDungeonList} sort={dungeonSort} onSort={handleDungeonSort} />
+      )}
     </section>
   )
 }

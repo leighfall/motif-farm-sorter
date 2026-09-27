@@ -1,7 +1,6 @@
-import type { MotifRow, SortState, MotifSortableColumn } from '../data/types'
-import { sourceTypeFilter } from '../data/constants'
+import type { DungeonRow, SortState, DungeonSortableColumn } from '../data/types'
 import { SortableHeader } from './SortableHeader'
-import './MotifTable.less'
+import '../styles/data-table.less'
 
 function formatGold(price: number | null): string {
   if (price === null) return '—'
@@ -15,15 +14,13 @@ function toTitleCase(value: string): string {
     .join(' ')
 }
 
-const sourceDisplayNameByType = new Map(sourceTypeFilter.map((source) => [source.type, source.displayName]))
-
-interface MotifTableProps {
-  rows: MotifRow[]
-  sort: SortState<MotifSortableColumn>
-  onSort: (column: MotifSortableColumn) => void
+interface DungeonTableProps {
+  rows: DungeonRow[]
+  sort: SortState<DungeonSortableColumn>
+  onSort: (column: DungeonSortableColumn) => void
 }
 
-export function MotifTable({ rows, sort, onSort }: MotifTableProps) {
+export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
   return (
     <div className="data-table-wrapper">
       <table className="data-table">
@@ -32,9 +29,12 @@ export function MotifTable({ rows, sort, onSort }: MotifTableProps) {
             <SortableHeader column="styleName" sort={sort} onSort={onSort}>
               Style
             </SortableHeader>
-            <th>Piece</th>
-            <SortableHeader column="avgPrice" sort={sort} onSort={onSort}>
-              Avg Price
+            <th>Dungeon</th>
+            <SortableHeader column="avgPieceValue" sort={sort} onSort={onSort}>
+              Avg Piece Value
+            </SortableHeader>
+            <SortableHeader column="totalSetValue" sort={sort} onSort={onSort}>
+              Total Set Value
             </SortableHeader>
             <SortableHeader column="minPrice" sort={sort} onSort={onSort}>
               Min
@@ -42,22 +42,21 @@ export function MotifTable({ rows, sort, onSort }: MotifTableProps) {
             <SortableHeader column="maxPrice" sort={sort} onSort={onSort}>
               Max
             </SortableHeader>
+            <th>Pieces</th>
             <th>Listings</th>
-            <th>Source</th>
-            <th>Location</th>
           </tr>
         </thead>
         <tbody>
           {rows.map((row) => (
-            <tr key={`${row.chapterId}-${row.pieceName}`}>
+            <tr key={row.chapterId}>
               <td>{toTitleCase(row.styleName)}</td>
-              <td>{row.pieceName}</td>
-              <td>{formatGold(row.avgPrice)}</td>
+              <td>{row.location}</td>
+              <td>{formatGold(row.avgPieceValue)}</td>
+              <td>{formatGold(row.totalSetValue)}</td>
               <td>{formatGold(row.minPrice)}</td>
               <td>{formatGold(row.maxPrice)}</td>
-              <td>{row.listingCount}</td>
-              <td>{sourceDisplayNameByType.get(row.sourceType)}</td>
-              <td>{row.location}</td>
+              <td>{row.pieceCount}</td>
+              <td>{row.totalListingCount}</td>
             </tr>
           ))}
         </tbody>

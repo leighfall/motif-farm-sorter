@@ -5,14 +5,16 @@ interface DropdownFilterProps {
   options: sourceTypeFilterType[];
   activeFilter: MotifSourceType | 'all';
   onChange: (sourceType: MotifSourceType | 'all') => void;
+  disabled?: boolean;
 }
 
-export function DropdownFilter({ options, activeFilter, onChange }: DropdownFilterProps) {
+export function DropdownFilter({ options, activeFilter, onChange, disabled }: DropdownFilterProps) {
   return (
     <select
       className="dropdown-filter"
       value={activeFilter}
       onChange={(event) => onChange(event.target.value as MotifSourceType | 'all')}
+      disabled={disabled}
     >
       <option value="all">All Sources</option>
       {options.map((option) => (

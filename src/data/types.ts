@@ -29,11 +29,12 @@ export type MotifSourceType =
 
 export type MotifConfidence = 'high' | 'medium' | 'low'
 
-export type SortableColumn = 'styleName' | 'avgPrice' | 'minPrice' | 'maxPrice'
+export type MotifSortableColumn = 'styleName' | 'avgPrice' | 'minPrice' | 'maxPrice'
+export type DungeonSortableColumn = 'styleName' | 'avgPieceValue' | 'totalSetValue' | 'minPrice' | 'maxPrice'
 export type SortDirection = 'asc' | 'desc'
 
-export interface SortState {
-  column: SortableColumn
+export interface SortState<TColumn extends string> {
+  column: TColumn
   direction: SortDirection
 }
 
@@ -59,4 +60,18 @@ export interface sourceTypeFilterType {
   id: number;
   type: MotifSourceType;
   displayName: string;
+}
+
+// One row per dungeon (grouped by chapterId from all of that style's
+// MotifRows), for the "which dungeon is most worth farming" view.
+export interface DungeonRow {
+  chapterId: number
+  styleName: string
+  location: string
+  pieceCount: number
+  avgPieceValue: number | null
+  totalSetValue: number | null
+  minPrice: number | null
+  maxPrice: number | null
+  totalListingCount: number
 }
