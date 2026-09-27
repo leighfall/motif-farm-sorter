@@ -31,14 +31,15 @@ npm run dev          # fire up the dev server
 
 ## Keeping the data fresh
 
-The price data goes stale the moment someone in your guild undercuts the whole market by 40%. To refresh it:
+The price data goes stale the moment someone in your guild undercuts the whole market by 40%. The whole refresh chain is automated end-to-end now:
 
-1. Open the TTC client and let it do its thing (updates the addon files in your ESO `live/AddOns/TamrielTradeCentre/` folder).
-2. Copy `ItemLookUpTable_EN.lua` and `PriceTableNA.lua` into this project's `data/` folder.
-3. Run `npm run build:data` (this also stamps `data/last-updated.json` with the current time — that's what powers the "Last updated" text on the site).
-4. Commit and push. 💰
+1. A Windows Task Scheduler job (`scripts/register-task.ps1`) runs `scripts/sync-and-deploy.ps1` every 2 hours while you're logged in.
+2. That script checks the TTC addon's data files for changes, and if it finds any, copies `ItemLookUpTable_EN.lua` and `PriceTableNA.lua` into this project's `data/` folder.
+3. It runs `npm run build:data` (which regenerates `data/motifs.json` and stamps `data/last-updated.json` — that's what powers the "Last updated" text on the site), then commits and pushes.
+4. This repo is connected to Vercel's GitHub integration, so the push to `main` automatically builds and ships the site.
 
-That's it — no manual deploy step anymore. This repo is connected to Vercel's GitHub integration, so a push to `main` automatically builds and ships the site. (A Task Scheduler job that runs the whole "TTC client updated its files → copy → build → commit → push" chain unattended is still on the wishlist — for now, steps 1–4 are a manual, hands-on labor of love.)
+All you have to do is keep the TTC client running so it keeps its addon files up to date — everything after that happens unattended.
+```
 
 ## Data quality notes
 
