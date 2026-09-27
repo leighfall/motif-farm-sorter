@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# 🐺 Motif Farm Sorter
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+*"To dungeon, or not to dungeon — that is the (gold-per-hour) question."*
 
-Currently, two official plugins are available:
+A little static site that answers the eternal ESO crafter's dilemma: **is this motif worth farming, or should I just buy the darn thing off Guild Traders?** It pulls real market prices from [Tamriel Trade Centre](https://tamrieltradecentre.com/) and cross-references every single crafting style with exactly where it drops — dungeon, trial, quest, sketchy Cyrodiil bush, whatever — so you can stop tabbing out to UESP mid-farm.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**🔗 Live site:** [motif-farm-sorter.vercel.app](https://motif-farm-sorter.vercel.app)
 
-## React Compiler
+## What's actually going on here
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📊 **Prices** come straight from your local TTC addon data (`ItemLookUpTable_EN.lua` + `PriceTableNA.lua`) — no scraping, no guessing, just whatever the market's actually paying right now.
+- 🗺️ **Farm sources** are hand-researched and *fussy about accuracy*. "Dungeon" means an actual 4-player Group Finder dungeon — not a delve boss, not a public dungeon, not a 12-player trial wearing a dungeon costume. If it says Dungeon, you can literally queue for it.
+- 🔍 **Sort & filter** by style, price, or source type, so you can answer questions like "what's the most expensive thing I can farm this weekend" in about four seconds.
+- 🌗 Respects your system's light/dark mode, because nobody wants to get flashbanged checking motif prices at 2am.
 
-## Expanding the Oxlint configuration
+## Tech stack
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- **Vite + React + TypeScript** — because a spreadsheet deserves a real frontend
+- **LESS** for styling, because we have *opinions* about CSS
+- A small Node script (`scripts/build-motif-data.mjs`) that turns minified Lua tables into clean JSON, because parsing Lua by hand builds character
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Running it yourself
+
+```bash
+npm install
+npm run build:data   # regenerate data/motifs.json from the .lua files in data/
+npm run dev          # fire up the dev server
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Keeping the data fresh
+
+The price data goes stale the moment someone in your guild undercuts the whole market by 40%. To refresh it:
+
+1. Open the TTC client and let it do its thing (updates the addon files in your ESO `live/AddOns/TamrielTradeCentre/` folder).
+2. Copy `ItemLookUpTable_EN.lua` and `PriceTableNA.lua` into this project's `data/` folder.
+3. Run `npm run build:data`.
+4. Commit, push, redeploy. 💰
+
+(A fully automated "TTC client runs → everything else happens by itself" pipeline is on the wishlist — currently this is a very manual, very hands-on labor of love.)
+
+## Data quality notes
+
+`data/motif-sources.json` is researched and audited by hand (with a healthy dose of "wait, is that *actually* a dungeon?" fact-checking against UESP). It's best-effort, not gospel — if you spot a wrong location, that's a very fixable problem, not a betrayal.
+
+---
+
+*Built for people who would rather write a React app than manually cross-reference two spreadsheets. We understand each other.*
