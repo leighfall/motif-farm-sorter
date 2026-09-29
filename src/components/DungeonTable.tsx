@@ -27,7 +27,7 @@ export function DungeonTable({ rows, sort, onSort }: DungeonTableProps) {
         <thead>
           <tr>
             <SortableHeader column="styleName" sort={sort} onSort={onSort}>
-              Style
+              Motif
             </SortableHeader>
             <th>Dungeon</th>
             <SortableHeader column="medianPieceValue" sort={sort} onSort={onSort}>

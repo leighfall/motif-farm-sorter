@@ -30,7 +30,7 @@ export function MotifTable({ rows, sort, onSort }: MotifTableProps) {
         <thead>
           <tr>
             <SortableHeader column="styleName" sort={sort} onSort={onSort}>
-              Style
+              Motif
             </SortableHeader>
             <th>Piece</th>
             <SortableHeader column="avgPrice" sort={sort} onSort={onSort}>
