@@ -275,8 +275,8 @@
     "styleName": "dro-m'athra",
     "chapterId": 35,
     "sourceType": "trial",
-    "location": "Rakkhat, final boss of Maw of Lorkhaj trial (Normal/Veteran; guaranteed on Veteran Hard Mode)",
-    "notes": "Also available weekly from the 'Into the Maw' weekly quest coffer, and as a Legendary Crown Crate reward (Scalecaller/Unfeathered crates). Crafting requires Defiled Whiskers.",
+    "location": "Maw of Lorkhaj (Reaper's March)",
+    "notes": "Possible drop from final boss Rakkhat (guaranteed on Veteran Hard Mode), or from the weekly 'Into the Maw' quest coffer, and as a Legendary Crown Crate reward (Scalecaller/Unfeathered crates). Crafting requires Defiled Whiskers.",
     "confidence": "high"
   },
   {
@@ -1027,8 +1027,8 @@
     "styleName": "coldharbour dominator",
     "chapterId": 133,
     "sourceType": "trial",
-    "location": "Vault of Agony (Western Solstice)",
-    "notes": "Possible drop from final boss Overfiend Kazpian (guaranteed on Veteran Hard Mode), or from the Ossein Cage weekly trial coffer.",
+    "location": "Ossein Cage (Western Solstice)",
+    "notes": "Possible drop from final boss Overfiend Kazpian (guaranteed on Veteran Hard Mode), or from the weekly trial coffer for completing 'Vault of Agony'.",
     "confidence": "high"
   },
   {
