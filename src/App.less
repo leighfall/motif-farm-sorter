@@ -23,7 +23,13 @@
       // The "E" glyph's left-side bearing leaves a hair of space before the
       // ink starts, so the title reads as nudged right of the flush-left
       // content below it (table headers, "Last updated"). Pull it back.
+      // Skipped on mobile, where the smaller title no longer needs it and
+      // it looked off.
       text-indent: -4px;
+
+      @media (max-width: @breakpoint-mobile) {
+        text-indent: 0;
+      }
     }
   }
 

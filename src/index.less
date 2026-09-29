@@ -77,6 +77,11 @@ h2 {
 
 h1 {
   font-size: 56px;
+  // :root's line-height is a % that computes to a fixed pixel value there
+  // and inherits as that pixel value — not rescaled for h1's much larger
+  // font-size — so wrapped lines would otherwise sit almost on top of each
+  // other. Give h1 its own relative line-height so it scales with itself.
+  line-height: 108%;
   letter-spacing: -1.68px;
   margin: 32px 0;
   @media (max-width: @breakpoint-mobile) {
